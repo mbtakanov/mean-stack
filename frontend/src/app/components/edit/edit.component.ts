@@ -55,7 +55,7 @@ export class EditComponent implements OnInit {
         duration: 3000
       });
 
-      // this.router.navigate(['/list']);
+      this.router.navigate(['/list']);
     });
   }
 }

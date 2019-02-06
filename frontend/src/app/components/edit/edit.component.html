@@ -42,7 +42,7 @@
       <br><br>
 
       <button type="button" mat-raised-button color="accent" routerLink="/list">Back</button>
-      <button type="button" mat-raised-button color="primary" routerLink="/list" (click)="updateIssue()"
+      <button type="button" mat-raised-button color="primary" (click)="updateIssue()"
               [disabled]="form.pristine || form.invalid">
         Update
       </button>
