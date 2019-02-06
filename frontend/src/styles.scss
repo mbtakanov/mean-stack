@@ -1,0 +1,47 @@
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom theme
+@import 'my-theme.scss';
+
+.my-theme {
+  @include angular-material-theme($my-theme);
+}
+
+.my-dark-theme {
+  @include angular-material-theme($my-dark-theme);
+  background: #303030;
+}
+
+.my-light-theme {
+  @include angular-material-theme($my-light-theme);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+  margin: 5px !important;
+}
+
+#router-outlet {
+  width: 90%;
+  margin: auto;
+}
+
+.form {
+  min-width: 150px;
+  width: 50%;
+}
+
+.field-full-width {
+  width: 100%;
+}
