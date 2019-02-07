@@ -31,7 +31,7 @@ npm install
 npm run dev
 ```
 
-This will start the node server and will connect to MongoDB.
+This will start the node server, connect to MongoDB and watch for changes.
 
 
 #### Production
