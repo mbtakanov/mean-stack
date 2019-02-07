@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +12,7 @@ export class IssueService {
   private headers: any;
 
   constructor(private http: HttpClient) {
-    this.uri  = 'http://localhost:4000';
+    this.uri  = environment.baseUrl;
     this.headers = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'

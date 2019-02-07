@@ -1,26 +1,25 @@
 {
-  "name": "backend",
+  "name": "mean-stack-backend",
   "version": "1.0.0",
-  "description": "",
+  "author": "Marin Takanov",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "dev": "babel-watch index.js",
-    "build": "babel index.js -d dist && babel models/issue.js -d dist/models",
-    "prestart": "npm run build",
+    "build": "babel ./ --ignore node_modules,dist -d ./dist/",
+    "prestart": "npm install && npm run build",
     "start": "node dist/index.js"
   },
-  "author": "Marin Takanov",
-  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-watch": "^7.0.0"
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "babel-watch": "7.0.0"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.9"
+    "body-parser": "1.18.3",
+    "cors": "2.8.5",
+    "express": "4.16.4",
+    "mongoose": "5.4.9"
   }
 }
