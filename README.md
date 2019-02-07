@@ -1,15 +1,19 @@
-##Prerequisites:
+## Stack:
 
-MongoDB - v4.0.5, issues database, issues collection
+MongoDB 4.0.5
 
-Node.js v10.13.0
+Express 4.16.4
 
-Angular v7
+Angular 7
+
+Node.js 10.13.0
 
 
 ## Usage
 
-####Development 
+First you'll need to create `issues` database and `issues` collection in MongoDB.
+
+#### Development 
 
 In the `frontend` folder run the following commands:
 
@@ -30,7 +34,7 @@ npm run dev
 This will start the node server and will connect to MongoDB.
 
 
-####Production
+#### Production
 
 In the `frontend` folder run the following commands:
 
